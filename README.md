@@ -10,7 +10,7 @@ Here, the UCI HAR Dataset is preprocessed and analyzed to understand the data di
 
 ## Machine Learning Model Training
 
-This focuses on training classical machine learning models on the preprocessed data. Key steps include:
+This focuses on training classical machine learning models using expert-generated 561 features from every time-series window. Key steps include:
 
 - Splitting the data into training and testing sets
 - Training various machine learning models such as Logistic Regression, Decision Trees, Random Forest, and SVM
@@ -18,7 +18,7 @@ This focuses on training classical machine learning models on the preprocessed d
 
 ## Deep Learning Model Training
 
-Here deep learning models are trained on the preprocessed raw time series data. Key steps include:
+Here deep learning models are trained on the preprocessed raw time series data from every time series window of 2.56 sec. Key steps include:
 
 - Designing and building neural network architectures such as LSTM and GRU
 - Training the neural networks on the dataset
@@ -41,19 +41,18 @@ Here deep learning models are trained on the preprocessed raw time series data. 
 
 ## Dataset
 
-### Description
 
 The UCI HAR Dataset was created by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto, and Xavier Parra. The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz.
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-### More Information
-
-For more details about this dataset, please refer to the original authors' publication:
-
-Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra, and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
-
 ## Results
 
-The results of the project include trained models capable of accurately classifying human activities. The performance of these models is evaluated using appropriate metrics and visualized for comparison.
+By using classical machine learning algorithm on expert-generated 561 features we got maximum 96.78% accuracy in Linear SVC. But if we use raw time series data on LSTM/GRU we're still getting maximum of 90.73%. So, even without domain knowledge of data we can still be able to reach 90.73% using the Deep Learning technique(LSTM).
+
+- Logistic Regression : 96.06%       
+- Linear SVC          : 96.78%       - LSTM : 90.73%
+- rbf SVM classifier  : 96.27%       - GRU : 89.82%
+- DecisionTree        : 86.19%      
+- Random Forest       : 91.79%      
 
