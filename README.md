@@ -1,6 +1,4 @@
-# Human Activity Recognition Project
-
-## Overview
+## Human Activity Recognition Project
 
 This project aims to classify human activities using the UCI Human Activity Recognition (HAR) dataset. The project involves data analysis and preprocessing, machine learning model training using expert-generated 561 features, and deep learning model training using raw time series data to recognize and predict human activities based on sensor data accurately.
 
