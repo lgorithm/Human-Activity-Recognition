@@ -6,7 +6,7 @@ This project aims to classify human activities using the UCI HAR dataset. It inv
 ## Exploratory data analysis
 
 Here, the UCI HAR Dataset is preprocessed and analyzed to understand the data distribution and feature relationships among 561 expert-generated features using different data visualization techniques including t-SNE to prepare it for machine learning and deep learning models.
-
+![Activity Analysis](/assets/images/eda1.png)
 
 ## Machine Learning Model Training
 
