@@ -7,6 +7,9 @@ This project aims to classify human activities using the UCI HAR dataset. It inv
 
 Here, the UCI HAR Dataset is preprocessed and analyzed to understand the data distribution and feature relationships among 561 expert-generated features using different data visualization techniques including t-SNE to prepare it for machine learning and deep learning models.
 ![Activity Analysis](/assets/images/eda1.png)
+| t-SNE Perplexity 2 Iteration 1000 | t-SNE Perplexity 50 Iteration 1000 |
+|      :---:      |     :---:      |
+| ![t-SNE](/assets/images/t-sne_perp_2_iter_1000.png)  | ![t-SNE](/assets/images/t-sne_perp_50_iter_1000.png)  |
 
 ## Machine Learning Model Training
 
