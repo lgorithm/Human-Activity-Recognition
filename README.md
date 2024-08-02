@@ -50,9 +50,11 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 By using classical machine learning algorithm on expert-generated 561 features we got maximum 96.78% accuracy in Linear SVC. But if we use raw time series data on LSTM/GRU we're still getting maximum of 90.73%. So, even without domain knowledge of data we can still be able to reach 90.73% using the Deep Learning technique(LSTM).
 
-- Logistic Regression : 96.06%       
-- Linear SVC          : 96.78%       - LSTM : 90.73%
-- rbf SVM classifier  : 96.27%       - GRU : 89.82%
-- DecisionTree        : 86.19%      
-- Random Forest       : 91.79%      
+| Machine Learning | Deep Learning |
+|      :---:      |     :---:      |
+| Logistic Regression : 96.06%  | LSTM : 90.73%  |
+| Linear SVC          : 96.78%  | GRU : 89.82%   |
+| rbf SVM classifier  : 96.27%  |                |
+| DecisionTree        : 86.19%  |                |
+| Random Forest       : 91.79%  |                |
 
